@@ -36,3 +36,4 @@ git-log.sh
 .vscode
 
 Events.txt
+gradle/gradle-daemon-jvm.properties
