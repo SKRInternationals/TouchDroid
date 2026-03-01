@@ -3,15 +3,14 @@ plugins {
 }
 
 android {
-    compileSdk 34
+    compileSdk 36
 
     defaultConfig {
         applicationId "com.akshayaap.touchdroid"
         minSdk 23
-        targetSdk 33
+        targetSdk 35
         versionCode 7
         versionName "2.0.1"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -30,18 +29,19 @@ android {
         includeInApk false
         includeInBundle false
     }
+    buildToolsVersion '36.0.0'
 }
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.7.1'
     implementation 'com.google.android.material:material:1.12.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'androidx.activity:activity:1.9.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation 'androidx.activity:activity:1.10.1'
     //noinspection GradleDynamicVersion
     testImplementation 'junit:juni t:4.13.2'
-    testImplementation 'org.testng:testng:7.10.2'
-    testImplementation 'org.testng:testng:7.10.2'
+    testImplementation 'org.testng:testng:7.11.0'
+    testImplementation 'org.testng:testng:7.11.0'
     androidTestImplementation 'androidx.test.ext:junit:1.2.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
 }
